@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premier League Match Registration</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; padding: 0 15px; background-color: #f4f4f9; }
+    header, footer { background-color: #38003c; color: white; text-align: center; padding: 15px; border-radius: 5px; }
+    main { background: white; padding: 20px; border-radius: 5px; margin: 15px 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    fieldset { border: 1px solid #ccc; padding: 15px; border-radius: 5px; margin-bottom: 15px; }
+    legend { font-weight: bold; color: #38003c; padding: 0 5px; }
+    .form-group { margin-bottom: 15px; }
+    label { display: block; margin-bottom: 5px; font-weight: bold; }
+    input, select { width: 100%; padding: 8px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+    button { background-color: #00ff85; color: #38003c; font-weight: bold; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; width: 100%; font-size: 16px; }
+    button:hover { background-color: #02e075; }
+  </style>
+</head>
+<body>
+
+  <!-- Semantic Structure: Header -->
+  <header>
+    <h1>Premier League Match Registration</h1>
+  </header>
+
+  <!-- Semantic Structure: Nav -->
+  <nav>
+    <p><strong>Note:</strong> Complete the form below to reserve your match tickets.</p>
+  </nav>
+
+  <!-- Semantic Structure: Main -->
+  <main>
+    <form action="#" method="POST">
+      
+      <!-- Fieldset & Legend Group 1: Personal Info -->
+      <fieldset>
+        <legend>Personal Details</legend>
+        
+        <div class="form-group">
+          <label for="fullname">Full Name:</label>
+          <!-- Input 1: text | Validation: required -->
+          <input type="text" id="fullname" name="fullname" required placeholder="John Doe">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <!-- Input 2: email | Validation: required -->
+          <input type="email" id="email" name="email" required placeholder="example@mail.com">
+        </div>
+
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <!-- Input 3: number | Validation: min & max -->
+          <input type="number" id="age" name="age" min="18" max="100" required placeholder="18+">
+        </div>
+      </fieldset>
+
+      <!-- Fieldset & Legend Group 2: Ticket Info -->
+      <fieldset>
+        <legend>Match Selection</legend>
+
+        <div class="form-group">
+          <label for="match">Select Match:</label>
+          <!-- Input 4: select -->
+          <select id="match" name="match" required>
+            <option value="">-- Choose a Match --</option>
+            <option value="ars-che">Arsenal vs Chelsea</option>
+            <option value="mci-liv">Manchester City vs Liverpool</option>
+            <option value="mun-tot">Manchester United vs Tottenham</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="matchdate">Preferred Match Date:</label>
+          <!-- Input 5: date -->
+          <input type="date" id="matchdate" name="matchdate" required>
+        </div>
+
+        <div class="form-group">
+          <label for="tickets">Number of Tickets (Max 4):</label>
+          <!-- Input 6: number | Validation: min & max -->
+          <input type="number" id="tickets" name="tickets" min="1" max="4" required>
+        </div>
+      </fieldset>
+
+       <button type="submit">Register Tickets</button>
+    </form>
+  </main>
+
+  <!-- Semantic Structure: Footer -->
+  <footer style="margin-top:20px;">
+    <p>&copy; 2026 Premier League Ticket Portal. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Contact Page</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+
+            <p>Please fill out the form below to get in touch with us.</p>
+
+            <form action="#" method="post">
+
+                <label for="txtName">Name:</label>
+                <input
+                    type="text"
+                    id="txtName"
+                    name="txtName"
+                    required
+                >
+                <br><br>
+
+                <label for="txtEmail">Email:</label>
+                <input
+                    type="email"
+                    id="txtEmail"
+                    name="txtEmail"
+                    required
+                >
+                <br><br>
+
+                <label for="txtPhone">Phone:</label>
+                <input
+                    type="tel"
+                    id="txtPhone"
+                    name="txtPhone"
+                    pattern="[0-9]{10}"
+                    title="Please enter a valid 10-digit phone number"
+                    required
+                >
+                <br><br>
+
+                <label for="txtAge">Age:</label>
+                <input
+                    type="number"
+                    id="txtAge"
+                    name="txtAge"
+                    min="13"
+                    max="120"
+                    required
+                >
+                <br><br>
+
+                <label for="txtMessage">Message:</label>
+                <textarea
+                    id="txtMessage"
+                    name="txtMessage"
+                    rows="5"
+                    cols="40"
+                    required
+                ></textarea>
+                <br><br>
+
+                <fieldset>
+                    <legend>Preferred Contact Method</legend>
+
+                    <input
+                        type="radio"
+                        id="contactEmail"
+                        name="contactMethod"
+                        value="email"
+                        checked
+                    >
+                    <label for="contactEmail">Email</label>
+
+                    <br>
+
+                    <input
+                        type="radio"
+                        id="contactPhone"
+                        name="contactMethod"
+                        value="phone"
+                    >
+                    <label for="contactPhone">Phone</label>
+
+                </fieldset>
+
+                <br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Cancel">
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Contact Page</p>
+    </footer>
+
+</body>
+
+</html>
