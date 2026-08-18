@@ -42,3 +42,34 @@ th, td {
 th {
     background-color: #eeeeee;
 }
+
+header nav a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+form button {
+    background-color: #4a3525;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #6b4e37;
+}
+
+footer {
+    text-align: center;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 20px;
+}
