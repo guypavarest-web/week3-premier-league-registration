@@ -1,0 +1,44 @@
+/* 477-301 Exam 1 — นายปวเรศ ฉันท์รัตนโชติ 6710510215 */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px;
+}
+
+header {
+    background-color: #4a3525;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #4a3525;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #eeeeee;
+}
